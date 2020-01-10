@@ -8,11 +8,6 @@
 # end
 
 def reverse_each_word(sentence)
-  blank_array = []
-  sentence_array = sentence.split
-  sentence_array.collect do |word|
-    blank_array << word.reverse
-  end
-  blank_array.join(" ")
+  sentence.split.collect {|word| word.reverse}.join(" ")
 end
 # print reverse_each_word("hey there bud")
